@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="1" failures="0" hostname="ternet.com.ua" id="0" name="RaceIntegrationTests" package="" tests="1" time="0.33" timestamp="2011-07-31T02:17:10">
+      <properties />
+
+      <testcase classname="RaceIntegrationTests" name="testRaceDatesBeforeToday" time="0.329">
+          <error message="No such property: badfield for class: RaceIntegrationTests" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: badfield for class: RaceIntegrationTests
+	at RaceIntegrationTests.testRaceDatesBeforeToday(RaceIntegrationTests.groovy:20)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testRaceDatesBeforeToday--
+
+Errors:
+org.springframework.validation.BeanPropertyBindingResult: 7 errors
+Field error in object 'racetrack.Race' on field 'city': rejected value [null]; codes [racetrack.Race.city.nullable.error.racetrack.Race.city,racetrack.Race.city.nullable.error.city,racetrack.Race.city.nullable.error.java.lang.String,racetrack.Race.city.nullable.error,race.city.nullable.error.racetrack.Race.city,race.city.nullable.error.city,race.city.nullable.error.java.lang.String,race.city.nullable.error,racetrack.Race.city.nullable.racetrack.Race.city,racetrack.Race.city.nullable.city,racetrack.Race.city.nullable.java.lang.String,racetrack.Race.city.nullable,race.city.nullable.racetrack.Race.city,race.city.nullable.city,race.city.nullable.java.lang.String,race.city.nullable,nullable.racetrack.Race.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class racetrack.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object 'racetrack.Race' on field 'cost': rejected value [null]; codes [racetrack.Race.cost.nullable.error.racetrack.Race.cost,racetrack.Race.cost.nullable.error.cost,racetrack.Race.cost.nullable.error.java.math.BigDecimal,racetrack.Race.cost.nullable.error,race.cost.nullable.error.racetrack.Race.cost,race.cost.nullable.error.cost,race.cost.nullable.error.java.math.BigDecimal,race.cost.nullable.error,racetrack.Race.cost.nullable.racetrack.Race.cost,racetrack.Race.cost.nullable.cost,racetrack.Race.cost.nullable.java.math.BigDecimal,racetrack.Race.cost.nullable,race.cost.nullable.racetrack.Race.cost,race.cost.nullable.cost,race.cost.nullable.java.math.BigDecimal,race.cost.nullable,nullable.racetrack.Race.cost,nullable.cost,nullable.java.math.BigDecimal,nullable]; arguments [cost,class racetrack.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object 'racetrack.Race' on field 'distance': rejected value [null]; codes [racetrack.Race.distance.nullable.error.racetrack.Race.distance,racetrack.Race.distance.nullable.error.distance,racetrack.Race.distance.nullable.error.java.math.BigDecimal,racetrack.Race.distance.nullable.error,race.distance.nullable.error.racetrack.Race.distance,race.distance.nullable.error.distance,race.distance.nullable.error.java.math.BigDecimal,race.distance.nullable.error,racetrack.Race.distance.nullable.racetrack.Race.distance,racetrack.Race.distance.nullable.distance,racetrack.Race.distance.nullable.java.math.BigDecimal,racetrack.Race.distance.nullable,race.distance.nullable.racetrack.Race.distance,race.distance.nullable.distance,race.distance.nullable.java.math.BigDecimal,race.distance.nullable,nullable.racetrack.Race.distance,nullable.distance,nullable.java.math.BigDecimal,nullable]; arguments [distance,class racetrack.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object 'racetrack.Race' on field 'maxRunners': rejected value [100000]; codes [racetrack.Race.maxRunners.max.error.racetrack.Race.maxRunners,racetrack.Race.maxRunners.max.error.maxRunners,racetrack.Race.maxRunners.max.error.java.lang.Integer,racetrack.Race.maxRunners.max.error,race.maxRunners.max.error.racetrack.Race.maxRunners,race.maxRunners.max.error.maxRunners,race.maxRunners.max.error.java.lang.Integer,race.maxRunners.max.error,racetrack.Race.maxRunners.max.exceeded.racetrack.Race.maxRunners,racetrack.Race.maxRunners.max.exceeded.maxRunners,racetrack.Race.maxRunners.max.exceeded.java.lang.Integer,racetrack.Race.maxRunners.max.exceeded,race.maxRunners.max.exceeded.racetrack.Race.maxRunners,race.maxRunners.max.exceeded.maxRunners,race.maxRunners.max.exceeded.java.lang.Integer,race.maxRunners.max.exceeded,max.exceeded.racetrack.Race.maxRunners,max.exceeded.maxRunners,max.exceeded.java.lang.Integer,max.exceeded]; arguments [maxRunners,class racetrack.Race,100000,10000]; default message [Property [{0}] of class [{1}] with value [{2}] exceeds maximum value [{3}]]
+Field error in object 'racetrack.Race' on field 'name': rejected value [null]; codes [racetrack.Race.name.nullable.error.racetrack.Race.name,racetrack.Race.name.nullable.error.name,racetrack.Race.name.nullable.error.java.lang.String,racetrack.Race.name.nullable.error,race.name.nullable.error.racetrack.Race.name,race.name.nullable.error.name,race.name.nullable.error.java.lang.String,race.name.nullable.error,racetrack.Race.name.nullable.racetrack.Race.name,racetrack.Race.name.nullable.name,racetrack.Race.name.nullable.java.lang.String,racetrack.Race.name.nullable,race.name.nullable.racetrack.Race.name,race.name.nullable.name,race.name.nullable.java.lang.String,race.name.nullable,nullable.racetrack.Race.name,nullable.name,nullable.java.lang.String,nullable]; arguments [name,class racetrack.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object 'racetrack.Race' on field 'startDate': rejected value [Sat Jul 23 21:17:10 CDT 2011]; codes [racetrack.Race.startDate.validator.error.racetrack.Race.startDate,racetrack.Race.startDate.validator.error.startDate,racetrack.Race.startDate.validator.error.java.util.Date,racetrack.Race.startDate.validator.error,race.startDate.validator.error.racetrack.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,racetrack.Race.startDate.validator.invalid.racetrack.Race.startDate,racetrack.Race.startDate.validator.invalid.startDate,racetrack.Race.startDate.validator.invalid.java.util.Date,racetrack.Race.startDate.validator.invalid,race.startDate.validator.invalid.racetrack.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.racetrack.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class racetrack.Race,Sat Jul 23 21:17:10 CDT 2011]; default message [Property [{0}] of class [{1}] with value [{2}] does not pass custom validation]
+Field error in object 'racetrack.Race' on field 'state': rejected value [null]; codes [racetrack.Race.state.nullable.error.racetrack.Race.state,racetrack.Race.state.nullable.error.state,racetrack.Race.state.nullable.error.java.lang.String,racetrack.Race.state.nullable.error,race.state.nullable.error.racetrack.Race.state,race.state.nullable.error.state,race.state.nullable.error.java.lang.String,race.state.nullable.error,racetrack.Race.state.nullable.racetrack.Race.state,racetrack.Race.state.nullable.state,racetrack.Race.state.nullable.java.lang.String,racetrack.Race.state.nullable,race.state.nullable.racetrack.Race.state,race.state.nullable.state,race.state.nullable.java.lang.String,race.state.nullable,nullable.racetrack.Race.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class racetrack.Race]; default message [Property [{0}] of class [{1}] cannot be null]
+
+BadField:
+Field error in object 'racetrack.Race' on field 'startDate': rejected value [Sat Jul 23 21:17:10 CDT 2011]; codes [racetrack.Race.startDate.validator.error.racetrack.Race.startDate,racetrack.Race.startDate.validator.error.startDate,racetrack.Race.startDate.validator.error.java.util.Date,racetrack.Race.startDate.validator.error,race.startDate.validator.error.racetrack.Race.startDate,race.startDate.validator.error.startDate,race.startDate.validator.error.java.util.Date,race.startDate.validator.error,racetrack.Race.startDate.validator.invalid.racetrack.Race.startDate,racetrack.Race.startDate.validator.invalid.startDate,racetrack.Race.startDate.validator.invalid.java.util.Date,racetrack.Race.startDate.validator.invalid,race.startDate.validator.invalid.racetrack.Race.startDate,race.startDate.validator.invalid.startDate,race.startDate.validator.invalid.java.util.Date,race.startDate.validator.invalid,validator.invalid.racetrack.Race.startDate,validator.invalid.startDate,validator.invalid.java.util.Date,validator.invalid]; arguments [startDate,class racetrack.Race,Sat Jul 23 21:17:10 CDT 2011]; default message [Property [{0}] of class [{1}] with value [{2}] does not pass custom validation]
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testRaceDatesBeforeToday--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ternet.com.ua" id="1" name="RaceControllerTests" package="racetrack" tests="1" time="0.984" timestamp="2011-07-31T02:16:57">
+      <properties />
+
+      <testcase classname="racetrack.RaceControllerTests" name="testSomething" time="0.945" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ternet.com.ua" id="2" name="RaceTests" package="racetrack" tests="1" time="0.089" timestamp="2011-07-31T02:16:58">
+      <properties />
+
+      <testcase classname="racetrack.RaceTests" name="testInMiles" time="0.076" />
+
+      <system-out><![CDATA[--Output from testInMiles--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInMiles--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ternet.com.ua" id="3" name="RegistrationControllerTests" package="racetrack" tests="1" time="0.106" timestamp="2011-07-31T02:16:58">
+      <properties />
+
+      <testcase classname="racetrack.RegistrationControllerTests" name="testSomething" time="0.043" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="ternet.com.ua" id="4" name="RegistrationTests" package="racetrack" tests="1" time="0.012" timestamp="2011-07-31T02:16:58">
+      <properties />
+
+      <testcase classname="racetrack.RegistrationTests" name="testSomething" time="0.01" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

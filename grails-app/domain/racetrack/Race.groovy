@@ -1,7 +1,11 @@
 package racetrack
 
 class Race {
+	static hasMany = [registrations:Registration]
 	
+	String toString() {
+		return "${name}, ${startDate.format('MM/dd/yyyy')}"
+	}
     static constraints = {
 		name(blank:false, maxSize:50)
 		startDate(validator: {return (it > new Date())})
@@ -20,6 +24,9 @@ class Race {
 	BigDecimal cost
 	Integer maxRunners = 100000
 	
+	BigDecimal inMiles(){
+		return distance * 0.6214
+	}
 	static mapping = {
 		sort "startDate"
 	}
