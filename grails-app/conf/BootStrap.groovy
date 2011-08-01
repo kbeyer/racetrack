@@ -7,6 +7,22 @@ class BootStrap {
 		switch(GrailsUtil.environment){
 			case "development":
 		
+				def admin = new User(login:"admin",
+									 password:"wordpass",
+									 role:"admin")
+				admin.save()
+				if(admin.hasErrors()){
+					println admin.errors
+				}
+				
+				def joe = new User(login:"jdoe",
+									password:"password",
+									role:"user")
+				joe.save()
+				if(joe.hasErrors()){
+					println joe.errors
+				}
+				
 				def jane = new Runner(
 							firstName:"Jane",
 							lastName:"Doe",
