@@ -1,6 +1,7 @@
 package racetrack
 
 class Race {
+	static expose = "race"
 	static hasMany = [registrations:Registration]
 	
 	String toString() {
